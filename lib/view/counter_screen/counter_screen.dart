@@ -14,11 +14,12 @@ class CounterScreen extends StatelessWidget {
         actions: [
           IconButton(
               onPressed: () {
-                Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => ScreenSecond(),
-                    ));
+                // Navigator.push(
+                //     context,
+                //     MaterialPageRoute(
+                //       builder: (context) => ScreenSecond(),
+                //     ));
+                Get.to(() => ScreenSecond());
               },
               icon: Icon(Icons.arrow_circle_right_sharp))
         ],
