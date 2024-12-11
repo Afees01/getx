@@ -1,4 +1,5 @@
 import 'package:get/get.dart';
+import 'package:getx/view/counter_screen/counter_screen.dart';
 
 class CounterScreenController extends GetxController {
   int count = 0;
@@ -15,6 +16,7 @@ class CounterScreenController extends GetxController {
 
   onDecerement() {
     count--;
+    Get.off(() => CounterScreen());
     update();
   }
 }
